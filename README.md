@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Este foi a minha **primeira tentativa de construir um app** usando **Next.js**, com foco em um design **mobile-first**. A ideia foi criar um app para uma cafeteria, com catálogo de produtos, navegação otimizada para celular e estrutura moderna com Next.js.
+Este foi a minha **primeira tentativa de construir um app** usando **Next.js**, que apelidei carinhosamente de **De Grão em Grão**, com foco em um design **mobile-first**. A ideia foi criar um app para uma cafeteria, com catálogo de produtos, navegação otimizada para celular e estrutura moderna com Next.js.
 
 O projeto foi desenvolvido para colocar em prática os conhecimentos adquiridos em frontend, principalmente na organização de rotas, que possui funcionalidade nativa no Next.
 
