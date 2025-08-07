@@ -33,7 +33,7 @@
     },
     {
       id: '4',
-      name: 'Café gelado cremoso',
+      name: 'Café com leite gelado cremoso',
       price: 18.00,
       description: 'O famoso café coreano Dalgona.',
       image: '/cafes/cafe-gelado.png',
