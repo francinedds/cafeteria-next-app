@@ -52,4 +52,21 @@ yarn install
 npm run dev
 # ou
 yarn dev
+```
+
+## Aprendizados
+
+- Exploração do **Next.js**: rotas automáticas, paginação.
+- Desenvolvimento com abordagem **mobile-first**: responsividade desde o início.
+- **Componentização** e organização funcional dos componentes.
+- Implementação simples de uma **bag (carrinho)** com estado local ou Context API.
+- Uso básico de **otimização de imagens com `next/image`**.
+
+---
+
+## Contribuição
+
+Este projeto foi feito como **estudo**, por isso aceito sugestões, melhorias no design, novas funcionalidades ou ajustes no carrinho.  
+Sinta-se à vontade para abrir **issues** ou enviar **pull requests**.
+
 
