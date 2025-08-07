@@ -25,6 +25,7 @@ O projeto foi desenvolvido para colocar em prática os conhecimentos adquiridos 
 - Rotas dinâmicas para páginas de produto (`/products/[slug]`)
 - Componente de **carrinho** (*bag*) para adicionar/excluir itens e revisar pedidos.
 - Componentização clara e clean (SplashScreen, Login, Navbar, Card de produtos, Footer etc.)
+- Animação usando LottieFiles.
 
 ---
 
