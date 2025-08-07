@@ -6,6 +6,9 @@ Este foi a minha **primeira tentativa de construir um app** usando **Next.js**, 
 
 O projeto foi desenvolvido para colocar em prática os conhecimentos adquiridos em frontend, principalmente na organização de rotas, que possui funcionalidade nativa no Next.
 
+O design deste projeto foi criado no [Figma](https://figma.com) para facilitar o planejamento visual e a prototipagem da interface. Você pode conferir abaixo:
+[De Grão em Grão](https://www.figma.com/design/MtcIuvXV0domcp5Hv303UD/Coffee-App?node-id=0-1&p=f&t=Wrm8mOqSHKuUocoE-0)
+
 ---
 
 ## Tecnologias utilizadas
