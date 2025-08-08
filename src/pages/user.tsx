@@ -81,7 +81,7 @@ export default function User() {
           <p className="text-sm">{user.phone}</p>
           <button onClick={logout} className="mt-6 flex flex-row">
             <SignOutIcon size={22} />
-            <span className="text-sm ml-2">Sair</span> 
+            {/* <span className="text-sm ml-2">Sair</span> */}
           </button>
         </div>
       </div>
