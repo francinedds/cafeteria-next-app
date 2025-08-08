@@ -38,7 +38,8 @@ export default function LoginPage() {
           <XIcon size={18} weight="bold" />
         </button>
       </header>
-          <div className="min-h-screen flex items-center justify-center bg-[#DFD2C3]">
+
+      <div className="min-h-screen -mt-6 flex items-center justify-center bg-[#DFD2C3]">
         <form
           onSubmit={handleLogin}
           className="bg-[#DFD2C3] p-8 rounded-xl w-full max-w-sm"
