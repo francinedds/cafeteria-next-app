@@ -49,13 +49,13 @@ export default function Bag() {
                   <div>
                     <p className="text-sm font-semibold">{item.name}</p>
                     <p className="text-sm">Quantidade: {item.quantity}</p>
+                    <p className="text-sm font-bold">
+                    R${(item.price * item.quantity).toFixed(2)}
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex flex-col items-end justify-center text-right">
-                  <p className="text-sm font-bold">
-                    R${(item.price * item.quantity).toFixed(2)}
-                  </p>
                   <button
                     className="text-red-600 text-sm mt-1 hover:underline"
                     onClick={() => removeFromBag(item.id)}
