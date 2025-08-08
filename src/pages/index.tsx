@@ -14,7 +14,7 @@ export default function Splash() {
   }, [router]);
 
   return (
-    <div className="h-screen flex items-center justify-center bg-[#BFA78D]">
+    <div className="pb-24 h-screen flex items-center justify-center bg-[#BFA78D]">
       <Image src="/logo.svg" alt="logo" width={250} height={250} />
     </div>
   );
