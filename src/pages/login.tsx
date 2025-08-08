@@ -31,7 +31,7 @@ export default function LoginPage() {
     <>
       <header className="relative flex items-center w-full h-15 bg-[#DFD2C3] p-4">
         <button
-          onClick={() => router.push('/home')} // ou router.push('/home') se preferir
+          onClick={() => router.push('/home')}
           aria-label="Fechar"
           className="absolute top-4 right-4 p-1 flex items-center justify-center"
         >
