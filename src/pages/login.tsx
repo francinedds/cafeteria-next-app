@@ -19,7 +19,8 @@ export default function LoginPage() {
 
     const data = await res.json();
     if (res.ok) {
-      router.push('/home'); // Redireciona após login
+      localStorage.setItem('user', JSON.stringify(data.user));
+      router.push('/home?login=success'); // Redireciona após login
     } else {
       seterror(data.message || 'error ao fazer login');
     }
