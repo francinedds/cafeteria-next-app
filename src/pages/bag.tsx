@@ -22,7 +22,7 @@ export default function Bag() {
             loop
             autoplay
           />
-          <p className="text-center text-[#4E331B] -mt-6">Sua sacola está vazia.</p>
+          <p className="text-sm text-center text-[#4E331B] -mt-10">Sua sacola está vazia.</p>
         </div>
       ) : (
         <>
