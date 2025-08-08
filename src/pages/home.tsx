@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="p-6 pb-24">
-      <h1 className="text-4xl text-center mt-10 mb-2">Nossos Cafés</h1>
+      <h1 className="text-4xl text-center mt-8 mb-2">Nossos Cafés</h1>
       <p className="text-sm text-center text-[#4E331B] font-medium mb-2">
         É sempre uma boa hora para um <span className="text-[#AD7611]">café</span>.
       </p>
