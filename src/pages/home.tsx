@@ -20,7 +20,7 @@ export default function Home() {
         {menu.map((item: Product) => (
           <div
             key={item.id}
-            className="rounded-xl transition mt-5 bg-white overflow-hidden shadow-sm hover:shadow-md"
+            className="flex flex-col justify-between rounded-xl transition mt-5 bg-white overflow-hidden shadow-sm hover:shadow-md"
           >
             <Link href={`/product/${item.id}`} legacyBehavior>
               <a>
