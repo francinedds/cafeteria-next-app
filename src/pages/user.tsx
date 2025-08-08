@@ -36,10 +36,6 @@ export default function User() {
   return (
     <>
       <header className="relative flex items-center w-full h-15 bg-white p-4">
-      <button onClick={() => router.back()} aria-label="Voltar">
-        <CaretLeftIcon size={28} />
-      </button>
-
       <h2 className="absolute left-1/2 transform -translate-x-1/2 font-semibold">
         MEU PERFIL
       </h2>

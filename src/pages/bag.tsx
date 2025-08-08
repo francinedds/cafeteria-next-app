@@ -2,11 +2,12 @@ import React, { ReactElement } from 'react';
 import { useBag } from '@/context/BagContext';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Layout from '@/components/Layout';
-import { TrashIcon } from '@phosphor-icons/react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function Bag() {
   const { bag, removeFromBag } = useBag();
+  const router = useRouter();
 
   const total = bag.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -14,7 +15,7 @@ export default function Bag() {
   );
 
   return (
-    <div className="p-6 max-w-md mx-auto">
+    <div className="mx-auto">
       {bag.length === 0 ? (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <DotLottieReact
@@ -26,8 +27,13 @@ export default function Bag() {
         </div>
       ) : (
         <>
-          <h2 className="text-xl text-[#AD7611] font-semibold mb-4">Sacola</h2>
-          <ul>
+          <header className="relative flex items-center justify-center w-full h-15 bg-white p-4">
+            <h2 className="font-semibold absolute left-1/2 transform -translate-x-1/2">
+              MINHA SACOLA
+            </h2>
+          </header>
+
+          <ul className='px-6 mt-6'>
             {bag.map((item) => (
               <li
                 key={item.id}
@@ -61,7 +67,7 @@ export default function Bag() {
             ))}
           </ul>
 
-          <div className="mt-6 text-right">
+          <div className="px-6 text-right ">
             <p className="text-lg font-bold">
               Total: R${ total.toFixed(2) }
             </p>
