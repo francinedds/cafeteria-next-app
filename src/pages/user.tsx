@@ -76,12 +76,12 @@ export default function User() {
             )}
           </Avatar.Root>
 
-          <h2 className="mt-4 mb-2 font-semibold">Bem-vindo, {user.user}</h2>
-          <p>{user.email}</p>
-          <p>{user.phone}</p>
+          <h2 className="mt-4 mb-2 text-sm font-semibold">Bem-vindo, {user.user}</h2>
+          <p className="text-sm">{user.email}</p>
+          <p className="text-sm">{user.phone}</p>
           <button onClick={logout} className="mt-6 flex flex-row">
-            <SignOutIcon size={24} />
-            <span className="ml-2">Sair</span> 
+            <SignOutIcon size={22} />
+            <span className="text-sm ml-2">Sair</span> 
           </button>
         </div>
       </div>

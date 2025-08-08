@@ -7,14 +7,14 @@ export default function Splash() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      router.push('/login');
+      router.push('/home');
     }, 3000); // 3000s
 
     return () => clearTimeout(timeout);
   }, [router]);
 
   return (
-    <div className="pb-24 h-screen flex items-center justify-center bg-[#BFA78D]">
+    <div className="h-screen flex items-center justify-center bg-[#BFA78D]">
       <Image src="/logo.svg" alt="logo" width={250} height={250} />
     </div>
   );
