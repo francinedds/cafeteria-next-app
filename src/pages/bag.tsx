@@ -47,19 +47,20 @@ export default function Bag() {
                     className="rounded"
                   />
                   <div>
-                    <p className="font-semibold">{item.name}</p>
-                    <p>Quantidade: {item.quantity}</p>
+                    <p className="text-sm font-semibold">{item.name}</p>
+                    <p className="text-sm">Quantidade: {item.quantity}</p>
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className="font-bold">
-                    R${ (item.price * item.quantity).toFixed(2) }
+
+                <div className="flex flex-col items-end justify-center text-right">
+                  <p className="text-sm font-bold">
+                    R${(item.price * item.quantity).toFixed(2)}
                   </p>
                   <button
                     className="text-red-600 text-sm mt-1 hover:underline"
                     onClick={() => removeFromBag(item.id)}
                   >
-                    <TrashIcon size={24}/>
+                    <TrashIcon size={24} />
                   </button>
                 </div>
               </li>
@@ -67,12 +68,12 @@ export default function Bag() {
           </ul>
 
           <div className="px-6 text-right ">
-            <p className="text-lg font-bold">
+            <p className="text-sm font-bold">
               Total: R${ total.toFixed(2) }
             </p>
 
             <button
-              className="mt-4 bg-[#4E331B] text-white px-4 py-2 rounded hover:bg-[#3e2716]"
+              className="mt-4 bg-[#4E331B] text-sm text-white px-4 py-2 rounded hover:bg-[#3e2716]"
               onClick={() => alert('Implementar checkout')}
             >
               Finalizar
