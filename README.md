@@ -10,7 +10,7 @@ O design deste projeto foi criado no [Figma](https://figma.com) para facilitar o
 [De Grão em Grão](https://www.figma.com/design/MtcIuvXV0domcp5Hv303UD/Coffee-App?node-id=0-1&p=f&t=Wrm8mOqSHKuUocoE-0)
 
 ⚠️ Importante:
-Já que criei um login fake, você precisará de um **e-mail** e **senha** para acessar o app:
+Caso queira testar a função de login, aqui está o e-mail e a senha:
 - **E-mail**: admin@cafeteria.com
 - **Senha**: 123
 
@@ -74,7 +74,6 @@ yarn dev
 
 ## Contribuição
 
-Este projeto foi feito como **estudo**, por isso aceito sugestões, melhorias no design, novas funcionalidades ou ajustes no carrinho.  
-Sinta-se à vontade para abrir **issues** ou enviar **pull requests**.
+Este projeto foi feito como **estudo**, por isso aceito sugestões, melhorias no design, novas funcionalidades ou ajustes no carrinho. Sinta-se à vontade para abrir **issues** ou enviar **pull requests**.
 
 
