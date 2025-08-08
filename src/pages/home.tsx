@@ -4,25 +4,10 @@ import Image from 'next/image';
 import { useBag } from '@/context/BagContext';
 import { StarIcon, ShoppingBagIcon } from '@phosphor-icons/react';
 import Layout from '@/components/Layout';
-import { ReactElement, useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
-import { toast } from 'react-toastify';
+import { ReactElement } from 'react';
 
 export default function Home() {
   const { addToBag } = useBag();
-
-  const router = useRouter(); 
-  const hasShownToast = useRef(false); // previne múltiplas execuções
-
-  useEffect(() => { // parte modificada
-    if (router.query.login === 'success' && !hasShownToast.current) {
-      toast.success('Login realizado com sucesso!');
-      hasShownToast.current = true;
-
-      const { login, ...rest } = router.query;
-      router.replace({ pathname: router.pathname, query: rest }, undefined, { shallow: true });
-    }
-  }, [router]);
 
   return (
     <div className="p-6 pb-24">
