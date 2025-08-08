@@ -3,11 +3,10 @@ import { useBag } from '@/context/BagContext';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { TrashIcon } from '@phosphor-icons/react';
 
 export default function Bag() {
   const { bag, removeFromBag } = useBag();
-  const router = useRouter();
 
   const total = bag.reduce(
     (acc, item) => acc + item.price * item.quantity,
