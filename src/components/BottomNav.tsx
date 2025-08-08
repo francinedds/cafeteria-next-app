@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import styles from './BottomNav.module.css';
 import { HouseIcon, UserIcon, ShoppingBagIcon } from '@phosphor-icons/react';
 import { useBag } from '@/context/BagContext';
 
@@ -18,36 +19,48 @@ const BottomNav: React.FC = () => {
     setIsLoggedIn(!!user);
   }, []);
 
-  const userRoute = isLoggedIn ? '/user' : '/login';
-
-  const isActive = (path: string) => currentPath === path;
+  const userLink = isLoggedIn ? '/user' : '/login';
 
   return (
-    <nav className="fixed bottom-0 w-full flex justify-around items-center bg-white border-t border-gray-200 h-16 z-50">
-      {/* Sacola */}
-      <Link href="/bag">
-        <div className="relative flex flex-col items-center">
-          <ShoppingBagIcon size={28} className={isActive('/bag') ? 'text-[#4E331B]' : 'text-gray-500'} />
+    <nav className={styles.nav}>
+      <Link href="/bag" passHref legacyBehavior>
+        <a className={currentPath === '/bag' ? styles.active : ''} style={{ position: 'relative' }}>
+          <ShoppingBagIcon size={28} />
           {totalItems > 0 && (
-            <span className="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+            <span
+              style={{
+                position: 'absolute',
+                top: -4,
+                right: -4,
+                backgroundColor: 'red',
+                color: 'white',
+                fontSize: 10,
+                width: 16,
+                height: 16,
+                borderRadius: '999px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
               {totalItems}
             </span>
           )}
-        </div>
+        </a>
       </Link>
 
-      {/* Home (destaque central) */}
-      <Link href="/home">
-        <div className={`w-14 h-14 rounded-full flex items-center justify-center -mt-6 shadow-md bg-[#4E331B] ${isActive('/home') ? 'ring-2 ring-[#AD7611]' : ''}`}>
-          <HouseIcon size={28} color="#fff" />
-        </div>
-      </Link>
+      <div className={styles.homeWrapper}>
+        <Link href="/home" passHref legacyBehavior>
+          <a className={`${styles.homeButton} ${currentPath === '/home' ? styles.active : ''}`}>
+            <HouseIcon size={28} color="#fff" />
+          </a>
+        </Link>
+      </div>
 
-      {/* User (Login ou Perfil) */}
-      <Link href={userRoute}>
-        <div className="flex flex-col items-center">
-          <UserIcon size={28} className={isActive(userRoute) ? 'text-[#4E331B]' : 'text-gray-500'} />
-        </div>
+      <Link href={userLink} passHref legacyBehavior>
+        <a className={currentPath === userLink ? styles.active : ''}>
+          <UserIcon size={28} />
+        </a>
       </Link>
     </nav>
   );
