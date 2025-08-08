@@ -36,10 +36,10 @@ export default function User() {
   return (
     <>
       <header className="relative flex items-center w-full h-15 bg-white p-4">
-      <h2 className="absolute left-1/2 transform -translate-x-1/2 font-semibold">
-        MEU PERFIL
-      </h2>
-    </header>
+        <h2 className="absolute left-1/2 transform -translate-x-1/2 text-sm font-semibold">
+          MEU PERFIL
+        </h2>
+      </header>
       <div className="pb-24 flex flex-col items-center justify-center min-h-screen">
         <div className="bg-white shadow-lg rounded-xl p-8 w-[300px] flex flex-col items-center">
           <Avatar.Root

@@ -27,7 +27,7 @@ export default function Bag() {
       ) : (
         <>
           <header className="relative flex items-center justify-center w-full h-15 bg-white p-4">
-            <h2 className="font-semibold absolute left-1/2 transform -translate-x-1/2">
+            <h2 className="absolute left-1/2 transform -translate-x-1/2 text-sm font-semibold ">
               MINHA SACOLA
             </h2>
           </header>
