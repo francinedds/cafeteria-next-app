@@ -19,7 +19,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <> 
       <BagProvider>{getLayout(<Component {...pageProps} />)}</BagProvider>
-      <ToastContainer position="top-right" autoClose={3000} /> {/* parte modificada */}
     </>
   ); 
 }
