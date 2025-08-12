@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import { ReactElement, ReactNode } from "react";
 import { NextPage } from "next";
 import { BagProvider } from "@/context/BagContext";
-import { ToastContainer } from "react-toastify";
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
